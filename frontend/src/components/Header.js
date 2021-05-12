@@ -1,11 +1,16 @@
 import React from "react";
 import { Route } from "react-router-dom";
 import { LinkContainer } from "react-router-bootstrap";
-import { Navbar, Nav, Container, NavDropdown, Button } from "react-bootstrap";
+import { Nav, Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux"; // if you want to call an action its useDispatch, and to bring in state useSelector
+import { createTestimonial } from "../actions/testimonialActions";
 
 const Header = () => {
   const dispatch = useDispatch();
+
+  const createTestimonialHandler = () => {
+    dispatch(createTestimonial());
+  };
 
   return (
     <header className="header-area">

@@ -2,24 +2,19 @@ import mongoose from "mongoose";
 
 const testimonialSchema = mongoose.Schema(
   {
-    user: {
-      type: mongoose.Schema.Types.ObjectId,
+    photo: {
+      type: String,
       required: true,
-      ref: "User",
     },
     name: {
       type: String,
       required: true,
     },
-    image: {
+    post: {
       type: String,
       required: true,
     },
-    brand: {
-      type: String,
-      required: true,
-    },
-    category: {
+    company: {
       type: String,
       required: true,
     },
@@ -27,25 +22,10 @@ const testimonialSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    rating: {
+    active: {
       type: Number,
       required: true,
-      default: 0,
-    },
-    numReviews: {
-      type: Number,
-      required: true,
-      default: 0,
-    },
-    price: {
-      type: Number,
-      required: true,
-      default: 0,
-    },
-    countInStock: {
-      type: Number,
-      required: true,
-      default: 0,
+      default: 1,
     },
   },
   {
