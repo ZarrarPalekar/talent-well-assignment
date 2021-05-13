@@ -7,7 +7,7 @@ import "../index.css";
 const TestimonialCard = (props) => {
   const dispatch = useDispatch();
   const handleUpdateAsDelete = (id) => {
-    dispatch(makeInactive(id));
+    // dispatch(makeInactive(id));
   };
   return (
     <>

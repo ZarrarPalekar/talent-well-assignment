@@ -19,11 +19,11 @@ import {
 
 export const listTestimonials = () => async (dispatch) => {
   try {
-    console.log("1".big);
+    // console.log("1".big);
     dispatch({ type: TESTIMONIAL_LIST_REQUEST });
 
     const { data } = await axios.get("/api/testimonials");
-    console.log("data: ", data);
+    // console.log("data: ", data);
 
     dispatch({ type: TESTIMONIAL_LIST_SUCCESS, payload: data });
   } catch (error) {
@@ -55,7 +55,7 @@ export const listTestimonialDetails = (id) => async (dispatch) => {
   }
 };
 
-export const makeInactive = (id) => async (dispatch, getState) => {
+export const makeInactive = (id) => async (dispatch) => {
   try {
     dispatch({
       type: TESTIMONIAL_DELETE_REQUEST,

@@ -141,6 +141,7 @@ const Testimonial = () => {
                   allTestimonials.map((eachTestimonial) => (
                     <>
                       <TestimonialCard
+                        key={eachTestimonial._id}
                         id={eachTestimonial._id}
                         img={eachTestimonial.photo}
                         text={eachTestimonial.description}

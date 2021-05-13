@@ -99,7 +99,7 @@ const Header = () => {
       <div
         id="home"
         className="header-hero bg_cover"
-        style={{ "background-image": "url(assets/images/header-bg.jpg)" }}
+        style={{ backgroundImage: "url(assets/images/header-bg.jpg)" }}
       >
         <div className="container">
           <div className="row justify-content-center">

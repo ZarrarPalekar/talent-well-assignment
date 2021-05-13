@@ -3,26 +3,26 @@ import React from "react";
 const Contact = () => {
   return (
     <div>
-      <section id="contact" class="contact-area">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-6">
-              <div class="section-title text-center">
-                <h4 class="title">Get In touch</h4>
-                <p class="text">
+      <section id="contact" className="contact-area">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-6">
+              <div className="section-title text-center">
+                <h4 className="title">Get In touch</h4>
+                <p className="text">
                   Stop wasting time and money designing and managing a website
                   that doesn’t get results. Happiness guaranteed!
                 </p>
               </div>
             </div>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <div class="contact-form">
+          <div className="row justify-content-center">
+            <div className="col-lg-8">
+              <div className="contact-form">
                 <form id="contact-form" data-toggle="validator">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="single-form form-group">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="single-form form-group">
                         <input
                           type="text"
                           name="name"
@@ -30,11 +30,11 @@ const Contact = () => {
                           data-error="Name is required."
                           required="required"
                         />
-                        <div class="help-block with-errors"></div>
+                        <div className="help-block with-errors"></div>
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="single-form form-group">
+                    <div className="col-md-6">
+                      <div className="single-form form-group">
                         <input
                           type="email"
                           name="email"
@@ -42,11 +42,11 @@ const Contact = () => {
                           data-error="Valid email is required."
                           required="required"
                         />
-                        <div class="help-block with-errors"></div>
+                        <div className="help-block with-errors"></div>
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="single-form form-group">
+                    <div className="col-md-6">
+                      <div className="single-form form-group">
                         <input
                           type="text"
                           name="subject"
@@ -54,11 +54,11 @@ const Contact = () => {
                           data-error="Subject is required."
                           required="required"
                         />
-                        <div class="help-block with-errors"></div>
+                        <div className="help-block with-errors"></div>
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="single-form form-group">
+                    <div className="col-md-6">
+                      <div className="single-form form-group">
                         <input
                           type="text"
                           name="phone"
@@ -66,24 +66,24 @@ const Contact = () => {
                           data-error="Phone is required."
                           required="required"
                         />
-                        <div class="help-block with-errors"></div>
+                        <div className="help-block with-errors"></div>
                       </div>
                     </div>
-                    <div class="col-md-12">
-                      <div class="single-form form-group">
+                    <div className="col-md-12">
+                      <div className="single-form form-group">
                         <textarea
                           placeholder="Your Mesaage"
                           name="message"
                           data-error="Please, leave us a message."
                           required="required"
                         ></textarea>
-                        <div class="help-block with-errors"></div>
+                        <div className="help-block with-errors"></div>
                       </div>
                     </div>
-                    <p class="form-message"></p>
-                    <div class="col-md-12">
-                      <div class="single-form form-group text-center">
-                        <button type="submit" class="main-btn">
+                    <p className="form-message"></p>
+                    <div className="col-md-12">
+                      <div className="single-form form-group text-center">
+                        <button type="submit" className="main-btn">
                           send message
                         </button>
                       </div>
